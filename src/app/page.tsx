@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
 
-      <h2 className="text-2xl font-bold text-white mb-8"> </h1>beatinflationwithanurbangarden.website </h2>
+      <h2 className="text-2xl font-bold text-white mb-8">beatinflationwithanurbangarden.website </h2>
 
 
     </main>
