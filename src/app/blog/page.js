@@ -22,7 +22,7 @@
         <div className="container max-w-7xl py-2 px-4 md:px-6 flex items-center justify-between">
           <div className="flex flex-wrap items-center justify-center gap-2 ">
              
-            <h2 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6"> Blog of Beat inflation with an urban garden</h2>
+            <h2 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6">   Beat inflation with an urban garden</h2>
           <nav className=" flex flex-row items-center gap-4">
             <Link  href="/" className="text-sm font-medium hover:text-primary" prefetch={false}>
               <span class="font-bold text-xl text-slate-700">  Home </span>
@@ -63,6 +63,7 @@
 
             
 
+      <h1 className="md:text-xl text-base font-semibold text-black  px-4 md:px-6"> Blog of Beat inflation with an urban garden</h1>
 
 
               <hr className="my-8 border-t mt-48 border-gray-300" />
