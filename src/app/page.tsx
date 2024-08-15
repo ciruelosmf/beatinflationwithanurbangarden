@@ -18,7 +18,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://beatinflationwithanurbangarden.website/cov.jpg"
+          content="https://beatinflationwithanurbangarden.website/cov.JPG"
         />
       </Head>
 
