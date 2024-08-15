@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Beat Inflation with an Urban Garden",
-  description: "Beat Inflation with an Urban Garden",
+  title: "☘ Beat Inflation with an Urban Garden",
+  description: "☘ Beat Inflation with an Urban Garden",
 };
 
 export default function RootLayout({
