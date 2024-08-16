@@ -9,12 +9,18 @@
 
     export default function Blog() {
       const router = useRouter();
-      const { slug } = router.query;
-      const canonicalUrl = `https://yourdomain.com/blog/${slug}`;
+      const [canonicalUrl, setCanonicalUrl] = useState('');
+
+      useEffect(() => {
+        if (router.isReady) {
+          const { slug } = router.query;
+          setCanonicalUrl(`https://yourdomain.com/blog/${slug}`);
+        }
+      }, [router.isReady, router.query]);
     return (
         <div className="relative min-h-screen flex bg-blue-100 flex-col items-center">
-            <Head>
-        <link rel="canonical" href={canonicalUrl} />
+      <Head>
+        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       </Head>
 
 
