@@ -6,21 +6,31 @@
     import Link from "next/link"
     import Head from 'next/head';
     import { useRouter } from 'next/router';
+    import { usePathname, useSearchParams } from 'next/navigation';
+
+
 
     export default function Blog() {
-      const router = useRouter();
-      const [canonicalUrl, setCanonicalUrl] = useState('');
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const [canonicalUrl, setCanonicalUrl] = useState('');
 
-      useEffect(() => {
-        if (router.isReady) {
-          const { slug } = router.query;
-          setCanonicalUrl(`https://yourdomain.com/blog/${slug}`);
-        }
-      }, [router.isReady, router.query]);
+  useEffect(() => {
+    // Construct the full URL including search params if any
+    const fullPath = searchParams.toString() 
+      ? `${pathname}?${searchParams.toString()}`
+      : pathname;
+    setCanonicalUrl(`https://yourdomain.com${fullPath}`);
+  }, [pathname, searchParams]);
+
+
+
+
     return (
         <div className="relative min-h-screen flex bg-blue-100 flex-col items-center">
       <Head>
-        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+        
       </Head>
 
 
