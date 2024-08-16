@@ -5,34 +5,16 @@
     import Script from "next/script";
     import Link from "next/link"
     import Head from 'next/head';
-    import { useRouter } from 'next/router';
-    import { usePathname, useSearchParams } from 'next/navigation';
-
 
 
     export default function Blog() {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const [canonicalUrl, setCanonicalUrl] = useState('');
-
-  useEffect(() => {
-    // Construct the full URL including search params if any
-    const fullPath = searchParams.toString() 
-      ? `${pathname}?${searchParams.toString()}`
-      : pathname;
-    setCanonicalUrl(`https://yourdomain.com${fullPath}`);
-  }, [pathname, searchParams]);
-
-
-
 
     return (
         <div className="relative min-h-screen flex bg-blue-100 flex-col items-center">
-      <Head>
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-        
-      </Head>
 
+<Head>
+        <link rel="canonical" href="https://beatinflationwithanurbangarden.website/blog/windowsill-plants-a-smart-strategy-to-beat-inflation" />
+      </Head>
 
 
             
