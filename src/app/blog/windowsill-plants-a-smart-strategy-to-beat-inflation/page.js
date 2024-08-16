@@ -4,12 +4,18 @@
     import React from 'react';
     import Script from "next/script";
     import Link from "next/link"
-
+    import Head from 'next/head';
+    import { useRouter } from 'next/router';
 
     export default function Blog() {
+      const router = useRouter();
+      const { slug } = router.query;
+      const canonicalUrl = `https://yourdomain.com/blog/${slug}`;
     return (
         <div className="relative min-h-screen flex bg-blue-100 flex-col items-center">
-
+            <Head>
+        <link rel="canonical" href={canonicalUrl} />
+      </Head>
 
 
 
