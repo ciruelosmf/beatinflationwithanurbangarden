@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+  import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "☘ Beat Inflation with an Urban Garden",
-  description: "☘ Beat Inflation with an Urban Garden",
+  description: "☘ Discover how urban gardening can be your solution to beating inflation. This book guides you through setting up an urban garden to produce your own affordable, sustainable food.",
 };
 
 export default function RootLayout({

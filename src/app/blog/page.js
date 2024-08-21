@@ -34,7 +34,7 @@
             <Link  href="/blog" className="text-sm font-medium hover:text-primary" prefetch={false}>
               <span class="font-bold text-xl text-slate-700">  Blog </span>
             </Link>
-            <Link  href="/book" className="text-sm font-medium hover:text-primary" prefetch={false}>
+            <Link  href="https://www.amazon.com/dp/B0D15C98H4" className="text-sm font-medium hover:text-primary" prefetch={false}>
               <span class="font-bold text-xl text-slate-700">  Book </span>
             </Link>
             <Link  href="/about" className="text-sm font-medium hover:text-primary" prefetch={false}>
@@ -46,10 +46,7 @@
           </nav>
           </div>
  
-        </div>
-
-
-        
+        </div>       
 
       </header>
 
