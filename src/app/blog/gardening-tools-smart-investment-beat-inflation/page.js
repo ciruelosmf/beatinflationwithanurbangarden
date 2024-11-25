@@ -94,7 +94,9 @@
 
               <hr className="my-8 border-t mt-48 border-gray-300" />
 
-
+              <Link  href="https://www.limeparrottech.site/" className="text-sm font-medium hover:text-primary" prefetch={false}>
+                Go to LimeParrot 
+            </Link>
 
 
           <h2 className="text-3xl font-semibold mt-48 mb-4"> The Best AI Headshot Generator</h2>

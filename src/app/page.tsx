@@ -51,8 +51,13 @@ export default function Home() {
             </Link>
       <h2 className="text-2xl font-bold text-white mt-24  mb-2">beatinflationwithanurbangarden.website </h2>
 
+      <hr className="my-8 border-t mt-48 border-gray-300" />
 
+      <Link  href="https://www.limeparrottech.site/" className="text-sm font-medium hover:text-primary" prefetch={false}>
+                Go to LimeParrot 
+            </Link>
 
+            <hr className="my-8 border-t mt-48 border-gray-300" />
 
       <div className="grid grid-cols-1 gap-4 mt-2 mb-12 text-left">
                <Link href="https://aiimageandvideogenerators.xyz" className="ftext-xl font-medium hover:text-primary  " prefetch={false}> 

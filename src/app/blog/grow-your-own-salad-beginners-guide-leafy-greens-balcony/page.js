@@ -177,6 +177,7 @@
 
 
 
+               <hr className="my-8 border-t mt-48 border-gray-300" />
 
 
 
@@ -187,6 +188,10 @@
 
 
 
+
+               <Link  href="https://www.limeparrottech.site/" className="text-sm font-medium hover:text-primary" prefetch={false}>
+                Go to LimeParrot 
+            </Link>
 
 
 

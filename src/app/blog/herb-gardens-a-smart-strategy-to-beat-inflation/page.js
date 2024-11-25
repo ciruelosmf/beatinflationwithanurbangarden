@@ -106,7 +106,9 @@
 </p>
         
           
-
+<Link  href="https://www.limeparrottech.site/" className="text-sm font-medium hover:text-primary" prefetch={false}>
+                Go to LimeParrot 
+            </Link>
 
 
 
